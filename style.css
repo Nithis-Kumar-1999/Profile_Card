@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body 
+  {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card 
+  {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover 
+  {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #555;
+    color: #f4f4f9;
+  }
+  
+  .card-content 
+  {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile-img 
+  {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  h2 
+  {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .designation 
+  {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .bio 
+  {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons 
+  {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon 
+  {
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover 
+  {
+    color: #007BFF;
+  }
+  
+  @media (max-width: 768px) 
+  {
+    .card {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px)
+  {
+    .card 
+    {
+      width: 200px;
+    }
+  
+    h2 
+    {
+      font-size: 18px;
+    }
+  
+    .bio 
+    {
+      font-size: 12px;
+    }
+  }
+  
